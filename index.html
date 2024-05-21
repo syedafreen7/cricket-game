@@ -5,14 +5,18 @@
   <link rel = "stylesheet" href ="cricket.css">
 </head>
 <body>
+  <div>
   <h1>Bat Ball Stump Game</h1>
+</div>
   <button onclick="
   //This will generate random number between 0 and 3
-  let randomNumber = Math.random() * 3;
-  let computerChoice;
+  let randomNumber = Math.random() * 3;//randomNumber
+  let computerChoice;//computerChoice
+  //1>0 &&1<=1 True
   if (randomNumber > 0 && randomNumber <= 1) {
     computerChoice = 'Bat';
     // console.log('computer choice is Bat');
+    //2>1&&2<=2
   } else if (randomNumber > 1 && randomNumber <= 2) {
     computerChoice = 'Ball';
     // console.log('computer choice is Ball');
@@ -22,8 +26,10 @@
   }
 
   let resultMsg;
+  //bat ===ball
   if (computerChoice === 'Ball') {
     resultMsg = 'User won.';
+    //ball===bat
   } else if (computerChoice === 'Bat') {
     resultMsg = `It's a tie`;
   } else if (computerChoice === 'Stump') {
